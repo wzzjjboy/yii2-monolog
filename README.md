@@ -37,7 +37,7 @@ Yii2 MONOLOG
                                    ],
                                ],
                                'processor' => [
-                                   \common\log\LogIdProcessor::instance(), //生成logId
+                                   \yii2\monolog\LogIdProcessor::instance(), //生成logId
                                ],
                            ],
                        ],
@@ -51,7 +51,7 @@ Yii2 MONOLOG
 4. 如在控制台使用则需要手动刷新logId，手动调用如何方法
 
    ```php
-   \common\puppet\LogIdProcessor::instance()->refresh();
+   \yii2\monolog\LogIdProcessor::instance()->refresh();
    ```
 
    
